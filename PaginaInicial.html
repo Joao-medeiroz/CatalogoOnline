@@ -9,10 +9,12 @@
 </head>
 
 <body>
+    <!-- Desenvolvendo o Header -->
     <header class="Top">
         <div class="HeaderLeft">
             <h1>Bolos Tatá</h1>
         </div>
+        <!-- Navbar -->
         <div class="HeaderCenter">
             <ul>
                 <li> <a class="Menu" href="#">Biografia</a></li>
@@ -27,9 +29,23 @@
                 <li class="Login"> <a class="Menu" href="#">Login</a></li>
             </ul>
         </div>
+        <!-- Encerramento do Navbar -->
     </header>
+    <!-- Encerramento do Header -->
 
-    <Section class="SlideShows"></Section>
+    <!-- Desenvolvendo o SlideShow -->
+    <Section class="SlideShows">
+        <figure>
+            <img id="Imagem" src="IMG/img1.png" alt="Imagens das Promoções e bolos da casa">
+            <ul>
+                <li><button id="btn0" onclick="Direcionar(0)"></button></li>
+                <li><button id="btn1" onclick="Direcionar(1)"></button></li>
+                <li><button id="btn2" onclick="Direcionar(2)"></button></li>
+                <li><button id="btn3" onclick="Direcionar(3)"></button></li>
+            </ul>
+            </img>
+        </figure>
+    </Section>
 
     <Section class="Logo"></Section>
 
@@ -37,6 +53,7 @@
 
     <Footer class="Bottom"></Footer>
 
+    <script src="JAVASCRIPT/ScriptPI.js"></script>
 </body>
 
 </html>
