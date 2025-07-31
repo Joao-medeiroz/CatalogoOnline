@@ -1,9 +1,8 @@
 /* Função Slide Show */
 const Imagens = [
-    "IMG/img1.png",
-    "IMG/img2.png",
-    "IMG/img3.png",
-    "IMG/img4.png"
+    "IMG/Logo.jpeg",
+    "IMG/ifood.jpeg",
+    "IMG/AceitamosEncomendas.jpeg",
 ];
 
 let ValorAtual = 0;
