@@ -64,7 +64,7 @@
     padding: 10px 50px;
     background-color: #222;
     box-shadow: 4px 3px 3px #333;
-    transition: all 0.2 linear;
+    transition: all 0.2s linear;
 }
 
 .Login a:active {
@@ -115,74 +115,168 @@ button.ativo {
     background-color: #999;
 }
 
-/* Estilização do Section */
+/* Estilização do Section Slogan */
+
+.Slogan {
+    width: 100%;
+    height: 60vh;
+    background-color: #555;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border-radius: 5px;
+}
+
+.PaiSlogan {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+}
+
+.FilhoLeft {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.FilhoRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.Right-icons {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+}
+
+.Right-icons li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    margin: 0px 3px;
+}
+
+.Right-icons li a.facebook {
+    background-color: #3b5998;
+}
+
+.Right-icons li a.instagram {
+    background-color: #bc2a8d;
+}
+
+.Right-icons li a.whatsapp {
+    background-color: #4dc247;
+}
+
+.Right-icons li a i {
+    font-size: 32px;
+}
+
+.FilhoRight ul li a:hover{
+    transform: translate(0, -20%) scale(1.2);
+
+}
+
+/* Estilização do Section BestSellers */
 
 .BestSellers {
     width: 100%;
     height: 85vh;
     margin-top: 3px;
-    background-color: blue;
+    background-color: #888;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 3fr 3fr 3fr 3fr 1fr;
     grid-template-rows: 1fr 3fr;
     border-top-left-radius: 10px;
 }
 
 .Superior {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     font-size: 25px;
     background-color: #222;
     color: #777;
-    grid-column: 3 span;
+    grid-column: 6 span;
     grid-row: 1;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
 }
 
 .Item1 {
     color: #999;
     background-color: #666;
-    grid-column: 1;
+    grid-column: 2;
     grid-row: 2;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
 }
 
 .Item2 {
     color: #999;
     background-color: #555;
-    grid-column: 2;
+    grid-column: 3;
     grid-row: 2;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
 }
 
 .Item3 {
     color: #999;
     background-color: #666;
-    grid-column: 3;
+    grid-column: 4;
     grid-row: 2;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+}
+
+.Item4 {
+    color: #999;
+    background-color: #333;
+    grid-column: 5;
+    grid-row: 2;
 }
 
 .Superior,
 .Item1,
 .Item2,
-.Item3 {
+.Item3,
+.Item4 {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.Item1,
+.Item2,
+.Item3,
+.Item4 {
+    height: 55vh;
+    margin: 30px 10px;
+    overflow: hidden;
+    border-radius: 50px;
 }
 
 .Img_BS {
-    width: 50vh;
-    height: 60vh;
-    border-radius: 15px;
+    width: 45vh;
+    height: 55vh;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.Img_BS:hover {
+    transform: scale(1.1);
 }
 
 .ImgContainer {
@@ -192,14 +286,26 @@ button.ativo {
 
 .ItensH2 {
     position: absolute;
-    top: 300px; /* distância do topo */
+    top: 300px;
     left: 50%;
     transform: translateX(-50%);
     color: white;
-    font-size: 24px;
-    background-color: rgba(0, 0, 0, 0.5); /* fundo semi-transparente */
+    font-size: 23px;
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 5px 10px;
     border-radius: 8px;
+}
+
+/* Animação de revelação */
+.reveal-on-scroll {
+    opacity: 0;
+    filter: blur(10px);
+    transition: all 0.4s ease-out;
+}
+
+.reveal-on-scroll.reveal {
+    opacity: 1;
+    filter: blur(0);
 }
 
 /* Estilização do Footer */
@@ -213,4 +319,3 @@ button.ativo {
     border-radius: 5px;
 
 }
-

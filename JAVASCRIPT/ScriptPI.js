@@ -37,3 +37,19 @@ function atualizarImagem() {
 // Função de repetição
 setInterval(AtualizarSlides, 5000);
 /* Fim da Função Slide Show */
+
+/* Animação Section */
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('reveal');
+        }
+    });
+}, {
+    threshold: 0.2 // 20% visível já ativa
+});
+
+document.querySelectorAll('.reveal-on-scroll').forEach(el => {
+    observer.observe(el);
+});
