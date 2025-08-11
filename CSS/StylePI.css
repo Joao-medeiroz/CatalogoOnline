@@ -8,7 +8,7 @@
 .Top {
     width: 100%;
     height: 18vh;
-    background-color: #999;
+    background-color: #AEDFF7;
     border-radius: 5px;
     display: grid;
     margin-bottom: 3px;
@@ -16,7 +16,7 @@
 
 .Menu {
     transition: border-bottom 0.1s linear;
-    color: #666;
+    color: #4A4A4A;
     text-decoration: none;
 }
 
@@ -27,7 +27,6 @@
 }
 
 .NavCenter {
-
     grid-column: 2;
     grid-row: 1;
 }
@@ -39,7 +38,8 @@
 
 .NavCenter,
 .NavLeft,
-.NavRight {
+.NavRight,
+.NavLeft i {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,23 +47,54 @@
 }
 
 .NavCenter ul,
-.NavRight ul {
+.NavRight ul,
+.Dropbtn {
     display: flex;
     list-style: none;
     gap: 30px;
     font-size: 20px;
 }
 
-.NavCenter a:hover {
-    border-bottom: 2px solid #555;
+.NavCenter a:hover,
+.Dropdown:hover .Dropbtn {
+    border-bottom: 2px solid #999;
 }
 
+.Dropbtn {
+    display: inline-block;
+    list-style: none;
+    gap: 30px;
+    font-size: 20px;
+}
+
+.DropdownPai {
+    display: none;
+    position: absolute;
+}
+
+/* Efeito Dropdown */
+.DropdownPai a {
+    display: block;
+    list-style: none;
+    text-decoration: none;
+    color: #4A4A4A;
+    font-size: 17px;
+    text-align: left;
+    margin: 10px;
+}
+
+.Dropdown:hover .DropdownPai {
+    display: block;
+    background-color: #FFFFFF;
+}
+
+/* Fim do Dropdown */
 .Login a {
-    color: #888;
+    color: #FFFFFF;
     border-radius: 5px;
     padding: 10px 50px;
-    background-color: #222;
-    box-shadow: 4px 3px 3px #333;
+    background-color: #1B998B;
+    box-shadow: 4px 3px 3px rgba(27, 153, 139, 0.3);
     transition: all 0.2s linear;
 }
 
@@ -73,11 +104,19 @@
     box-shadow: none;
 }
 
-/* Estilização do SlideShow*/
+.Login a:hover {
+    background-color: #146F6D;
+}
+
+.NavLeft i{
+    font-size: 40px;
+}
+
+/* Estilização do SlideShow */
 
 .SlideShows {
     border-radius: 10px;
-    background-color: #222;
+    background-color: #1B998B;
     width: 100%;
     height: 82vh;
 }
@@ -102,8 +141,7 @@ button {
     width: 40px;
     margin: 5px;
     border-radius: 8px;
-    background-color: #555;
-    color: white;
+    color: #FFFFFF;
     border: none;
     cursor: pointer;
     opacity: 0.5;
@@ -112,7 +150,7 @@ button {
 
 button.ativo {
     opacity: 1;
-    background-color: #999;
+    background-color: #FFF8E7;
 }
 
 /* Estilização do Section Slogan */
@@ -120,19 +158,17 @@ button.ativo {
 .Slogan {
     width: 100%;
     height: 50vh;
-    background-color: #555;
+    background-color: #FFF8E7;
+    /* off-white quente */
     margin-top: 3px;
     margin-bottom: 3px;
     border-radius: 5px;
 }
 
 .PaiSlogan {
-    width: 100%;
-    height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-
+    height: 100%;
 }
 
 .FilhoLeft {
@@ -144,7 +180,8 @@ button.ativo {
     justify-content: center;
     align-items: center;
     text-align: center;
-
+    color: #1B998B;
+    /* teal suave */
 }
 
 .FilhoRight {
@@ -170,9 +207,10 @@ button.ativo {
     height: 60px;
     border-radius: 50%;
     text-decoration: none;
-    color: #fff;
+    color: #FFFFFF;
     transition: all 0.3s ease-in-out;
     margin: 0px 3px;
+    list-style: none;
 }
 
 .Right-icons li a.facebook {
@@ -187,23 +225,17 @@ button.ativo {
     background-color: #4dc247;
 }
 
-.Right-icons li a i {
-    font-size: 32px;
-}
-
 .FilhoRight ul li a:hover {
     transform: translate(0, -20%) scale(1.2);
-
 }
 
 /* Estilização do Section BestSellers */
-
 
 .BestSellers {
     width: 100%;
     height: 85vh;
     margin-top: 3px;
-    background-color: #888;
+    background-color: #FFF8E7;
     display: grid;
     grid-template-columns: 1fr 3fr 3fr 3fr 3fr 1fr;
     grid-template-rows: 1fr 3fr;
@@ -212,36 +244,36 @@ button.ativo {
 
 .Superior {
     font-size: 25px;
-    background-color: #222;
-    color: #777;
+    background-color: #1B998B;
+    color: #FFFFFF;
     grid-column: 6 span;
     grid-row: 1;
 }
 
 .Item1 {
-    color: #999;
-    background-color: #666;
+    color: #4A4A4A;
+    background-color: #C1F7DC;
     grid-column: 2;
     grid-row: 2;
 }
 
 .Item2 {
-    color: #999;
-    background-color: #555;
+    color: #4A4A4A;
+    background-color: #FFE8A1;
     grid-column: 3;
     grid-row: 2;
 }
 
 .Item3 {
-    color: #999;
-    background-color: #666;
+    color: #4A4A4A;
+    background-color: #FFB3AB;
     grid-column: 4;
     grid-row: 2;
 }
 
 .Item4 {
-    color: #999;
-    background-color: #333;
+    color: #4A4A4A;
+    background-color: #CFA0C9;
     grid-column: 5;
     grid-row: 2;
 }
@@ -290,14 +322,15 @@ button.ativo {
     top: 300px;
     left: 50%;
     transform: translateX(-50%);
-    color: white;
+    color: #FFFFFF;
     font-size: 23px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(27, 153, 139, 0.8);
     padding: 5px 10px;
     border-radius: 8px;
 }
 
 /* Animação de revelação */
+
 .reveal-on-scroll {
     opacity: 0;
     filter: blur(10px);
@@ -314,7 +347,8 @@ button.ativo {
 .Bottom {
     width: 100%;
     height: 30vh;
-    background-color: #999;
+    background-color: #AEDFF7;
+    /* azul pastel */
     border-radius: 5px;
     display: grid;
     margin-top: 3px;
@@ -324,5 +358,6 @@ button.ativo {
     width: 20vh;
     height: 20vh;
     border-radius: 100px;
+    background-color: #FFFFFF;
+    /* branco puro */
 }
-

@@ -5,21 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/StylePI.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="FontAwasome/fontawesome-free-7.0.0-web/css/all.min.css">
     <title>Bolos Tatá | Bolos, Doces e Salgados</title>
 </head>
 
 <body>
-    <!-- Desenvolvendo o Header -->
+    <!-- Desenvolvendo o Cabeçalho -->
     <header class="Top">
         <div class="NavLeft">
             <h1>Bolos Tatá</h1>
+            <i class="fa-solid fa-cake-candles" style="color:#E91E63;"></i>
         </div>
         <!-- Navbar -->
         <div class="NavCenter">
             <ul>
                 <li> <a class="Menu" href="#">Biografia</a></li>
-                <li> <a class="Menu" href="#">Produtos</a></li>
+
+                <!-- Dropdown  -->
+                <li class="Dropdown">
+                    <a class="Menu Dropbtn" href="#">Produtos</a>
+
+                    <div class="DropdownPai">
+                        <a href="#">Item 1</a>
+                        <a href="#">Item 2</a>
+                        <a href="#">Item 3</a>
+                        <a href="#">Item 4</a>
+                    </div>
+                </li>
+                <!-- Fim do Dropdown -->
+
                 <li> <a class="Menu" href="#">Contato</a></li>
                 <li> <a class="Menu" href="#">Lojas</a></li>
             </ul>
@@ -30,9 +44,9 @@
                 <li class="Login"> <a class="Menu" href="#">Login</a></li>
             </ul>
         </div>
-        <!-- Encerramento do Navbar -->
+        <!-- fim do Navbar -->
     </header>
-    <!-- Encerramento do Header -->
+    <!-- Fim do Cabeçalho -->
 
     <!-- Desenvolvendo o SlideShow -->
     <Section class="SlideShows">
@@ -46,6 +60,9 @@
             </img>
         </figure>
     </Section>
+    <!-- Fim do SlideShow -->
+
+    <!-- Desenvolvimento do Slogan -->
     <Section class="Slogan">
         <div class="PaiSlogan">
             <div class="FilhoLeft">
@@ -57,17 +74,17 @@
                 <ul class="Right-icons">
                     <li>
                         <a href="https://www.facebook.com/BolosTata" target="_blank" class="facebook">
-                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <i class="fab fa-facebook fa-2x" aria-hidden="true"></i>
                         </a>
                     </li>
                     <li>
                         <a href="https://wa.me/5511999999999" target="_blank" class="whatsapp">
-                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                            <i class="fab fa-whatsapp fa-2x" aria-hidden="true"></i>
                         </a>
                     </li>
                     <li>
                         <a href="https://www.instagram.com/BolosTata" target="_blank" class="instagram">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
                         </a>
                     </li>
                 </ul>
@@ -75,7 +92,9 @@
         </div>
 
     </Section>
+    <!-- Fim do Slogan -->
 
+    <!-- Desenvolvimento do BestSellers -->
     <Section class="BestSellers">
 
         <div class="Superior reveal-on-scroll" class="Superior">
@@ -106,7 +125,9 @@
             </figure>
         </div>
     </Section>
+    <!-- Fim do BestSellers -->
 
+    <!-- Desenvolvimento do Rodapé -->
     <Footer class="Bottom">
 
         <div class="NavLeft">
@@ -127,8 +148,11 @@
         <div class="NavRight">
             <h2 class="h2Footer">Obrigado Pela Preferência!</h2>
         </div>
+        <!-- Fim do Navbar -->
 
     </Footer>
+    <!-- Fim fo Rodapé -->
+
     <script src="JAVASCRIPT/ScriptPI.js"></script>
 </body>
 
