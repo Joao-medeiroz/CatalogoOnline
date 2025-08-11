@@ -1,7 +1,7 @@
 /* Função Slide Show */
 const Imagens = [
     "IMG/Logo.jpeg",
-    "IMG/ifood.jpeg",
+    "IMG/Ifood.jpg",
     "IMG/AceitamosEncomendas.jpeg",
 ];
 
