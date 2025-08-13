@@ -1,0 +1,236 @@
+/* MEDIA QUERIES PARA DIFERENTES DISPOSITIVOS */
+
+/* Laptops e desktops  */
+@media screen and (max-width: 1200px) {
+
+    /* Header mais compacto */
+    .Top {
+        height: 15vh;
+    }
+
+    .NavCenter ul,
+    .NavRight ul {
+        gap: 20px;
+        font-size: 18px;
+    }
+
+    /* SlideShow: altura reduzida */
+    .SlideShows {
+        height: 70vh;
+    }
+
+    #Imagem {
+        height: 65vh;
+    }
+
+    /* Slogan: fontes um pouco menores */
+    .FilhoLeft {
+        font-size: 28px;
+    }
+
+    .Slogan {
+        height: 45vh;
+    }
+
+    /* BestSellers: grid de 4 colunas em vez de 4+margin */
+    .BestSellers {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        height: auto;
+    }
+
+    .Item1,
+    .Item2,
+    .Item3,
+    .Item4 {
+        margin: 20px 5px;
+        height: 45vh;
+    }
+}
+
+/* Tablets ( tela na vertical) e Monitores mais modestos  */
+@media screen and (max-width: 1024px) {
+
+    /* Header */
+    .Top {
+        display: flex;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .NavCenter {
+        order: 1;
+    }
+
+    .NavLeft,
+    .NavRight {
+        order: 1;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .NavLeft h1 {
+        font-size: 35px;
+    }
+
+    .NavCenter ul {
+        flex-direction: row;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .Top .Menu {
+        font-size: 20px;
+
+    }
+
+    /* slide show */
+    .SlideShows {
+        height: 72vh;
+    }
+
+    /* Slogan */
+    .PaiSlogan {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .Slogan {
+        height: 30vh;
+        padding: 50px 0;
+    }
+
+    .FilhoLeft {
+        font-size: 35px;
+    }
+
+    /* BestSellers */
+    .BestSellers {
+        grid-template-columns: 1fr 3fr 3fr 3fr 3fr 1fr;
+        height: 75vh;
+    }
+
+    .BestSellers .Superior h2 {
+        font-size: 40px;
+    }
+
+    .Img_BS {
+        width: 35vh;
+        height: 45vh;
+    }
+
+    .ItensH2 {
+        top: 250px;
+        font-size: 25px;
+    }
+
+}
+
+/* Mesa digitalizadora */
+
+@media screen and (max-width: 768px) {
+
+    .NavLeft h1 {
+        font-size: 30px;
+    }
+
+    .Top .Menu,
+    .NavCenter .Dropdown .Menu {
+        font-size: 15px;
+    }
+
+    .FilhoLeft h2 {
+        font-size: 40px;
+    }
+
+    .ItensH2 {
+        top: 200px;
+        font-size: 18px;
+    }
+
+    .NavCenter .Menu {
+        font-size: 13px;
+    }
+
+    .h2Footer {
+        font-size: 20px;
+    }
+
+
+}
+
+/* Celular Grande */
+
+@media screen and (max-width: 425px) {
+
+    /* header */
+
+    .NavRight {
+        display: none;
+    }
+
+    .Item1 {
+        display: none;
+    }
+
+    /* slide show */
+    .SlideShows {
+        height: 72vh;
+    }
+
+    /* slogan */
+    .Slogan .FilhoRight {
+        margin: 20px 0px 0px 0px;
+    }
+
+    .Slogan h2 {
+        font-size: 35px;
+    }
+
+    .Right-icons li a {
+        width: 43px;
+        height: 43px;
+    }
+
+    .ItensH2 {
+        top: 200px;
+        font-size: 25px;
+    }
+
+    /* bestsellers */
+    .BestSellers h2 {
+        font-size: 25px;
+        padding: 20px;
+    }
+
+}
+
+
+/* Fim das Medias Squaries */
+
+/* Fontes do Site */
+h1 {
+    font-family: 'Pacifico', cursive;
+}
+
+.Menu {
+    font-family: 'Poppins', sans-serif;
+}
+
+.Slogan h2 {
+    font-family: 'Dancing Script', cursive;
+}
+
+#txt_BS,
+.ItensH2 {
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.h2Footer {
+    font-family: 'Quicksand', sans-serif;
+}

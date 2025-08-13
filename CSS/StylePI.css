@@ -2,157 +2,6 @@
     margin: 0;
     padding: 0%;
 }
-
-/* MEDIA QUERIES PARA DIFERENTES DISPOSITIVOS */
-
-/* Laptops e desktops  */
-@media screen and (max-width: 1200px) {
-
-    /* Header mais compacto */
-    .Top {
-        height: 15vh;
-    }
-
-    .NavCenter ul,
-    .NavRight ul {
-        gap: 20px;
-        font-size: 18px;
-    }
-
-    /* SlideShow: altura reduzida */
-    .SlideShows {
-        height: 70vh;
-    }
-
-    #Imagem {
-        height: 65vh;
-    }
-
-    /* Slogan: fontes um pouco menores */
-    .FilhoLeft {
-        font-size: 28px;
-    }
-
-    .Slogan {
-        height: 45vh;
-    }
-
-    /* BestSellers: grid de 4 colunas em vez de 4+margin */
-    .BestSellers {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto auto;
-        height: auto;
-    }
-
-    .Item1,
-    .Item2,
-    .Item3,
-    .Item4 {
-        margin: 20px 5px;
-        height: 45vh;
-    }
-}
-
-/* 2. Tablets e dispositivos touch grandes (até 1024px) */
-@media screen and (max-width: 1024px) {
-
-    /* Converte cabeçalho para 2 linhas */
-    .Top {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        padding: 10px 0;
-    }
-
-    .NavCenter {
-        order: 3;
-    }
-
-    .NavLeft,
-    .NavRight {
-        order: 1;
-        width: 100%;
-        justify-content: space-between;
-        padding: 0 20px;
-    }
-
-    .NavCenter ul {
-        flex-wrap: wrap;
-        gap: 15px;
-        justify-content: center;
-    }
-
-    /* Slogan empilha colunas */
-    .PaiSlogan {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-    }
-
-    .Slogan {
-        height: auto;
-        padding: 20px 0;
-    }
-
-    /* BestSellers empilha dois por linha */
-    .BestSellers {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .Img_BS {
-        width: 35vh;
-        height: 45vh;
-    }
-
-    /* Footer ajusta espaçamento */
-    .Bottom {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        padding: 20px 0;
-    }
-
-    .NavCenter,
-    .NavLeft,
-    .NavRight {
-        width: 100%;
-        justify-content: center;
-        margin: 10px 0;
-    }
-}
-
-/* ---------------------------------------------------
-    CELULAR GRANDE (até 425px)
-   --------------------------------------------------- */
-
-/* Fim das Medias Squaries */
-
-/* Fontes do Site */
-h1 {
-    font-family: 'Pacifico', cursive;
-}
-
-.Menu {
-    font-family: 'Poppins', sans-serif;
-}
-
-.Slogan h2 {
-    font-family: 'Dancing Script', cursive;
-}
-
-#txt_BS,
-.ItensH2 {
-    font-family: 'Playfair Display', serif;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
-.h2Footer {
-    font-family: 'Quicksand', sans-serif;
-}
-
 /* Estilização do Header */
 
 .Top {
@@ -173,7 +22,7 @@ body {
 .NavLeft {
     grid-column: 1;
     grid-row: 1;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .NavCenter {
@@ -198,7 +47,8 @@ body {
 
 .NavCenter ul,
 .NavRight ul,
-.Dropbtn {
+.Dropbtn,
+.NavCenter .Dropdown .Menu {
     display: flex;
     list-style: none;
     gap: 30px;
@@ -228,7 +78,7 @@ body {
     list-style: none;
     text-decoration: none;
     color: #4A4A4A;
-    font-size: 17px;
+    font-size: 15px;
     text-align: left;
     margin: 10px;
 }
@@ -473,7 +323,7 @@ button.ativo {
     top: 300px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 20px;
+    font-size: 25px;
     padding: 5px 10px;
     border-radius: 8px;
     color: #fff;
@@ -509,4 +359,8 @@ button.ativo {
     height: 20vh;
     border-radius: 100px;
     background-color: #FFFFFF;
+}
+
+.h2Footer{
+    font-size: 25px;
 }
